@@ -1,0 +1,19 @@
+<body>
+
+<!--Bring in the poll creation form-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      {{ >pollForm }}
+    </div>
+  </div>
+</div>
+
+<!--Loop over polls and show them each-->
+<div class="polls">
+  {{ #each polls }}
+    {{ >poll }}
+  {{ /each }}
+</div>
+
+</body>
